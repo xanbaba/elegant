@@ -1,0 +1,323 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Delius&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "/resources/styles/reset.css";
+
+* {
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+}
+
+dialog {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Colors */
+:root {
+    /* Primary */
+    --primary-1: #000;
+
+    /* Secondary */
+    --secondary-blue: #377DFF;
+    --secondary-green: #38CB89;
+    --secondary-orange: #FFAB00;
+    --secondary-red: #FF5630;
+
+    /* Neutral */
+    --neutral-01: #FEFEFE;
+    --neutral-02: #F3F5F7;
+    --neutral-03: #E8ECEF;
+    --neutral-04: #6C7275;
+    --neutral-05: #343839;
+    --neutral-06: #232627;
+    --neutral-07: #141718;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+
+    color: var(--primary-1);
+}
+
+.content-wrapper {
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+/* Header */
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.pages-nav {
+    font-weight: normal;
+}
+
+.pages-nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.pages-nav li {
+    transition: 0.2s;
+}
+
+.app-header .pages-nav li:not(.active) {
+    color: var(--neutral-04);
+}
+
+.app-header .pages-nav li:hover {
+    color: var(--primary-1);
+}
+
+.account-nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+.account-nav button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.account-nav .cart button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.account-nav .cart .cart-content-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: var(--neutral-07);
+}
+
+.neutral-04-formatted-text {
+    color: var(--neutral-04);
+}
+
+/* Footer */
+.app-footer {
+    background: var(--neutral-07);
+    padding-top: 80px;
+    padding-bottom: 32px;
+}
+
+.app-footer .logo {
+    color: white;
+    padding-right: 32px;
+    border-right: 1px var(--neutral-04) solid;
+}
+
+.app-footer > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: var(--neutral-04) 1px solid;
+}
+
+.app-footer .logo-wrapper {
+    color: var(--neutral-03);
+    display: flex;
+    align-items: center;
+}
+
+.app-footer .motto {
+    margin-left: 32px;
+    font-weight: normal;
+}
+
+.app-footer .pages-nav {
+    color: var(--neutral-01);
+}
+
+.copyright {
+    color: var(--neutral-03);
+    font-weight: normal;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.scroll-top-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --width: 140px;
+    width: var(--width);
+    position: fixed;
+    bottom: 16px;
+    right: 10px;
+}
+
+/* From Uiverse.io by vinodjangid07 */
+.scroll-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+}
+
+.scroll-svg-icon {
+    width: 12px;
+    transition-duration: 0.3s;
+}
+
+.scroll-svg-icon path {
+    fill: white;
+}
+
+.scroll-top:hover {
+    width: var(--width);
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(181, 160, 255);
+    align-items: center;
+}
+
+.scroll-top:hover .scroll-svg-icon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+}
+
+.scroll-top::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0;
+}
+
+.scroll-top:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+}
+
+/* Card modal */
+.cart-dialog {
+    padding: 40px 24px;
+    margin-right: 0;
+    height: 100%;
+    border: none;
+    --animationTime: 0.3s;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.cart-dialog {
+    animation: fadeIn var(--animationTime) linear both;
+}
+
+.cart-dialog.close {
+    animation: fadeOut var(--animationTime) linear both;
+}
+
+.cart-dialog::backdrop {
+    background: #00000032;
+    animation: fadeIn var(--animationTime) linear both;
+}
+
+.cart-dialog.close::backdrop {
+    animation: fadeOut var(--animationTime) linear both;
+}
+
+.cart-dialog header {
+    display: flex;
+    margin-bottom: 16px;
+    min-width: 265px;
+}
+
+.close-cart-btn {
+    margin-left: auto;
+    background: none;
+}
+
+.cart-element {
+    display: flex;
+}
+
+.cart-element > img {
+    margin-right: 16px;
+    display: block;
+    width: 80px;
+}
+
+.cart-element > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 200px;
+}

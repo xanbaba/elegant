@@ -1,0 +1,47 @@
+﻿[
+  {
+    "id": 0,
+    "title": "Loveseat Sofa",
+    "activePrice": 199.00,
+    "oldPrice": 400.00,
+    "isNew": true,
+    "salePercent": 50,
+    "imageSrc": "/resources/images/cards/loveseat-sofa.png"
+  },
+  {
+    "id": 1,
+    "title": "Table Lamp",
+    "activePrice": 24.99,
+    "oldPrice": null,
+    "isNew": true,
+    "salePercent": 50,
+    "imageSrc": "/resources/images/cards/table-lamp.png"
+  },
+  {
+    "id": 2,
+    "title": "Beige Table Lamp",
+    "activePrice": 24.99,
+    "oldPrice": null,
+    "isNew": true,
+    "salePercent": 50,
+    "imageSrc": "/resources/images/cards/beige-table-lamp.png"
+  },
+  {
+    "id": 3,
+    "title": "Bamboo basket",
+    "activePrice": 24.99,
+    "oldPrice": null,
+    "isNew": true,
+    "salePercent": 50,
+    "imageSrc": "/resources/images/cards/bamboo-basket.png"
+  },
+  {
+    "id": 4,
+    "title": "Toasted",
+    "activePrice": 224.99,
+    "oldPrice": null,
+    "isNew": true,
+    "salePercent": 50,
+    "imageSrc": "/resources/images/cards/bamboo-basket.png"
+  }
+]

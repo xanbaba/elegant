@@ -6,7 +6,21 @@
     "oldPrice": 400.00,
     "isNew": true,
     "salePercent": 50,
-    "imageSrc": "/resources/images/cards/loveseat-sofa.png"
+    "description": "A compact, cozy sofa perfect for two, ideal for small spaces or as an accent piece in your living room.",
+    "colors": [
+      {
+        "name": "Gray",
+        "imageSrc": "/resources/images/cards/loveseat-sofa-gray.png"
+      },
+      {
+        "name": "White",
+        "imageSrc": "/resources/images/cards/loveseat-sofa-white.webp"
+      },
+      {
+        "name": "Brown",
+        "imageSrc": "/resources/images/cards/loveseat-sofa-brown.webp"
+      }
+    ]
   },
   {
     "id": 1,
@@ -15,7 +29,17 @@
     "oldPrice": null,
     "isNew": true,
     "salePercent": 50,
-    "imageSrc": "/resources/images/cards/table-lamp.png"
+    "description": "A stylish and functional lighting solution, designed to illuminate desks, nightstands, or side tables with ease.",
+    "colors": [
+      {
+        "name": "Gold",
+        "imageSrc": "/resources/images/cards/table-lamp-gold.png"
+      },
+      {
+        "name": "Gray",
+        "imageSrc": "/resources/images/cards/table-lamp-gray.webp"
+      }
+    ]
   },
   {
     "id": 2,
@@ -24,7 +48,17 @@
     "oldPrice": null,
     "isNew": true,
     "salePercent": 50,
-    "imageSrc": "/resources/images/cards/beige-table-lamp.png"
+    "description": "A neutral-toned lamp offering warm, ambient light, perfect for creating a calm and inviting atmosphere.",
+    "colors": [
+      {
+        "name": "White",
+        "imageSrc": "/resources/images/cards/beige-table-lamp-white.png"
+      },
+      {
+        "name": "Black",
+        "imageSrc": "/resources/images/cards/beige-table-lamp-black.webp"
+      }
+    ]
   },
   {
     "id": 3,
@@ -33,15 +67,31 @@
     "oldPrice": null,
     "isNew": true,
     "salePercent": 50,
-    "imageSrc": "/resources/images/cards/bamboo-basket.png"
+    "description": "A lightweight, eco-friendly storage solution crafted from natural bamboo, versatile for organizing or decorative use.",
+    "colors": [
+      {
+        "name": "Brown",
+        "imageSrc": "/resources/images/cards/bamboo-basket-brown.png"
+      },
+      {
+        "name": "White",
+        "imageSrc": "/resources/images/cards/bamboo-basket-white.webp"
+      }
+    ]
   },
   {
     "id": 4,
-    "title": "Toasted",
+    "title": "Toaster",
     "activePrice": 224.99,
     "oldPrice": null,
     "isNew": true,
     "salePercent": 50,
-    "imageSrc": "/resources/images/cards/bamboo-basket.png"
+    "description": "Typically refers to food items browned or crisped using heat, enhancing flavor and texture—great for bread, nuts, or snacks.",
+    "colors": [
+      {
+        "name": "Black",
+        "imageSrc": "/resources/images/cards/toaster-black.png"
+      }
+    ]
   }
 ]

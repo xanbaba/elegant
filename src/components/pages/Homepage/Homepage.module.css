@@ -1,0 +1,146 @@
+﻿/* Motto */
+
+.motto-section {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.motto-section .motto {
+    flex-basis: 70%;
+    font-size: 72px;
+    line-height: 76px;
+    letter-spacing: -2px;
+    color: var(--neutral-07)
+}
+
+.company-info {
+    font-weight: 400;
+    color: var(--neutral-05);
+    padding: 50px 0;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.company-info > .company-name {
+    font-weight: 500;
+}
+
+.products-by-rooms {
+    margin-bottom: 48px;
+}
+
+.categories {
+    display: grid;
+    gap: 24px;
+    height: 665px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    color: var(--neutral-07);
+}
+
+.categories > li {
+    position: relative;
+}
+
+.categories h3 {
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: -0.6px;
+    margin-bottom: 12px;
+}
+
+.categories .arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.living-room {
+    grid-row: 3 / 1;
+    padding: 48px;
+    background: url("/resources/images/living-room.png") #F3F5F7 center no-repeat;
+}
+
+.bedroom-room {
+    grid-column-start: 2;
+    background: url("/resources/images/bedroom.png") #F3F5F7 center no-repeat;
+}
+
+.kitchen-room {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background: url("/resources/images/kitchen.png") #F3F5F7 center no-repeat;
+}
+
+.bedroom-room,
+.kitchen-room {
+    padding: 40px 32px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.more-info-link {
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 1px var(--primary-1) solid;
+    padding-bottom: 7px;
+}
+
+/* new-arrivals */
+
+.new-arrivals {
+}
+
+.new-arrivals .top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.new-arrivals h2 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+}
+
+.more-products-link {
+    align-self: flex-end;
+}
+
+/* Product Cards */
+
+.product-cards {
+    padding-bottom: 52px;
+    overflow-x: scroll;
+    margin-bottom: 80px;
+}
+
+.product-cards::-webkit-scrollbar {
+    height: 4px;
+}
+
+.product-cards::-webkit-scrollbar-thumb {
+    background: var(--neutral-05);
+    border-radius: 80px;
+}
+
+.product-cards::-webkit-scrollbar-track {
+    background: var(--neutral-03);
+    border-radius: 80px;
+}
+
+.product-cards > ul {
+    display: flex;
+    gap: 24px;
+}
+
+
+

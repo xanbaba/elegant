@@ -5,5 +5,6 @@
     public oldPrice: number | null = null;
     public isNew: boolean | null = null;
     public salePercent: number | null = null;
-    public imageSrc: string | null = null;
+    public description : string | null = null;
+    public colors : {name : string, imageSrc : string}[] | null = null;
 }

@@ -1,0 +1,68 @@
+﻿.image-slider {
+    position: relative;
+}
+
+.images-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.image-slider .images {
+    position: relative;
+    display: flex;
+    transition: left 0.3s ease;
+}
+
+.image-slider .images li {
+    flex: 0 0 100%;
+}
+
+.image-slider .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrow-navigation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+
+.arrow-navigation > button {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-navigation > button:first-child {
+    position: absolute;
+    left: 33px;
+}
+
+.arrow-navigation > button:last-child {
+    position: absolute;
+    right: 33px;
+}
+
+.arrow-navigation > button:first-child:enabled {
+    background: url("/resources/images/image-slider-arrow-active.svg") white center no-repeat;
+    transform: rotate(180deg);
+}
+
+.arrow-navigation > button:first-child:disabled {
+    background: url("/resources/images/image-slider-arrow-inactive.svg") white center no-repeat;
+}
+
+.arrow-navigation > button:last-child:enabled {
+    background: url("/resources/images/image-slider-arrow-active.svg") white center no-repeat;
+}
+
+.arrow-navigation > button:last-child:disabled {
+    background: url("/resources/images/image-slider-arrow-inactive.svg") white center no-repeat;
+    transform: rotate(180deg);
+}

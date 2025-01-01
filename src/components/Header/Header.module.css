@@ -1,0 +1,48 @@
+﻿.app-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.pages-nav {
+    font-weight: normal;
+}
+
+.pages-nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.pages-nav li {
+    transition: 0.2s;
+}
+
+.pages-nav li:not(.active) {
+    color: var(--neutral-04);
+}
+
+.pages-nav li:hover {
+    color: var(--primary-1);
+}
+
+.account-nav ul {
+    display: flex;
+    gap: 16px;
+}
+
+.account-nav button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cart button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

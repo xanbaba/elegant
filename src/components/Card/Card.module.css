@@ -1,0 +1,116 @@
+﻿.product-card {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 262px;
+    height: 349px;
+    background: #F3F5F7;
+    padding: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.price-section {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.old-price {
+    color: var(--neutral-04);
+    text-decoration: line-through;
+}
+
+.add-to-cart-btn {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    padding: 8px 24px;
+    border-radius: 8px;
+    border: none;
+    background: var(--neutral-07);
+    color: var(--neutral-01);
+    outline-offset: -1px;
+    outline: var(--neutral-07) solid 1px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.product-card * {
+    z-index: 2;
+}
+
+.card:hover .add-to-cart-btn {
+    visibility: visible;
+    opacity: 1;
+}
+
+.add-to-cart-btn:hover {
+    background: transparent;
+    color: var(--neutral-07);
+}
+
+.card-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.info-labels {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.new-product-label,
+.sale-product-label {
+    width: fit-content;
+    border-radius: 4px;
+    line-height: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+}
+
+.new-product-label {
+    background: white;
+    color: var(--neutral-07);
+}
+
+.sale-product-label {
+    background: #38CB89;
+    color: var(--neutral-01);
+}
+
+.product-card .rating-group {
+    display: flex;
+    gap: 2px;
+}
+
+.product-card .rating-group li {
+    width: 16px;
+    height: 16px;
+    background: url("/resources/images/star-disabled.svg") no-repeat center;
+}
+
+.product-card .rating-group li.active {
+    background: url("/resources/images/star-active.svg") no-repeat center;
+}

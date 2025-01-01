@@ -1,4 +1,4 @@
-﻿import $ from 'jquery';
+﻿import $ from "jquery";
 import {ProductModel} from "../../models/productModel";
 
 export const ProductCounter = (product: ProductModel) => {
@@ -9,11 +9,11 @@ export const ProductCounter = (product: ProductModel) => {
     const increment = () => {
         console.log("increment");
     }
-    return `
+    return $(`
         <div class="counter">
             <button onclick="${decrement}" class="product-counter-decrement">-</button>
             <span class="product-counter-value" aria-live="polite">2</span>
             <button onclick="${increment}" class="product-counter-increment">+</button>
         </div>
-    `
+    `);
 }

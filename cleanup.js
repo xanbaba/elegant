@@ -1,7 +1,7 @@
 ﻿const fs = require('fs');
 const path = require('path');
 
-const directory = path.join(__dirname, 'resources', 'javaScript');
+const directory = path.join(__dirname, 'resources', 'dist');
 
 // Function to delete all files in the directory
 const cleanDirectory = (dir) => {

@@ -1,24 +1,40 @@
-﻿import $ from "jquery"
+﻿import $ from "jquery";
+// @ts-ignore
+import styles from "./Footer.module.css";
+import {pageChanger} from "../App/App";
 
 export const Footer = () => {
-    return `
-        <footer class="app-footer content-wrapper">
+    const base = $(`
+        <footer class="${styles.appFooter} content-wrapper">
             <div>
-                <div class="logo-wrapper">
-                    <h2 class="logo"><a href="index.html">3legant<span class="neutral-04-formatted-text">.</span></a></h2>
-                    <p class="motto">Gift & Decoration Store</p>
+                <div class="${styles.logoWrapper}">
+                    <h2 class="${styles.logo}"><a href="/index.html">3legant<span class="neutral-04-formatted-text">.</span></a></h2>
+                    <p class="${styles.motto}">Gift & Decoration Store</p>
                 </div>
-                <nav class="pages-nav">
+                <nav class="${styles.pagesNav}">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li><a data-page="Homepage" href="/index.html">Home</a></li>
+                        <li><a data-page="ShopPage" href="#">Shop</a></li>
                         <li><a href="#">Product</a></li>
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
         
-            <p class="copyright">Copyright © 2023 3legant. All rights reserved</p>
+            <p class="${styles.copyright}">Copyright © 2023 3legant. All rights reserved</p>
         </footer>
-    `
+    `);
+
+    const pageLinks = base.find<HTMLAnchorElement>(`.${styles.pagesNav} a`);
+
+    pageLinks.on("click", async (e) => {
+        e.preventDefault();
+
+        const componentName = e.target.dataset.page;
+        if (componentName === undefined) return;
+
+        await pageChanger(componentName);
+    })
+
+    return base;
 }

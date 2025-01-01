@@ -1,0 +1,62 @@
+﻿.cart-dialog {
+    padding: 40px 24px;
+    margin-right: 0;
+    height: 100%;
+    border: none;
+    --animationTime: 0.3s;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.cart-dialog {
+    animation: fadeIn var(--animationTime) linear both;
+}
+
+.cart-dialog.close {
+    animation: fadeOut var(--animationTime) linear both;
+}
+
+.cart-dialog::backdrop {
+    background: #00000032;
+    animation: fadeIn var(--animationTime) linear both;
+}
+
+.cart-dialog.close::backdrop {
+    animation: fadeOut var(--animationTime) linear both;
+}
+
+.cart-dialog header {
+    display: flex;
+    margin-bottom: 16px;
+    min-width: 365px;
+}
+
+.cart-dialog header > h2 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+    color: #121212;
+}
+
+.close-cart-btn {
+    margin-left: auto;
+    background: none;
+}
